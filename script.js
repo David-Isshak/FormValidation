@@ -7,15 +7,15 @@ document.getElementById('secureForm').addEventListener('submit', function(event)
     // Vérifier le nom
     const nom = document.getElementById('nom').value.trim();
     const nameRegex = /^[a-zA-ZÀ-ÿ\s'-]+$/;
-    if (nom === "" || nom.length < 2 || !nameRegex.test(nom)) {
-        document.getElementById('nomError').textContent = "Veuillez entrer un nom valide (au moins 2 caractères, sans caractères spéciaux).";
+    if (nom === "" || nom.length < 3 || !nameRegex.test(nom)) {
+        document.getElementById('nomError').textContent = "Veuillez entrer un nom valide (au moins 3 caractères, sans caractères spéciaux).";
         valid = false;
     }
 
     // Vérifier le prénom
     const prenom = document.getElementById('prenom').value.trim();
-    if (prenom === "" || prenom.length < 2 || !nameRegex.test(prenom)) {
-        document.getElementById('prenomError').textContent = "Veuillez entrer un prénom valide (au moins 2 caractères, sans caractères spéciaux).";
+    if (prenom === "" || prenom.length < 3 || !nameRegex.test(prenom)) {
+        document.getElementById('prenomError').textContent = "Veuillez entrer un prénom valide (au moins 3 caractères, sans caractères spéciaux).";
         valid = false;
     }
 
