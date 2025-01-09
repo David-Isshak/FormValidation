@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire sécurisé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulaire</h1>
+    <form id="secureForm">
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <div class="error" id="nomError"></div>
+        </div>
+        <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+            <div class="error" id="prenomError"></div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error" id="emailError"></div>
+        </div>
+        <div class="form-group">
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required minlength="8">
+            <div class="error" id="passwordError"></div>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirmer le mot de passe :</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8">
+            <div class="error" id="confirmPasswordError"></div>
+        </div>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
